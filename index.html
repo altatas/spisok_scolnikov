@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список школьников</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Список школьников</h1>
+        <ul id="student-list">
+            <!-- Список школьников будет вставляться сюда -->
+        </ul>
+        <form id="add-student-form">
+            <div class="input-group">
+                <input type="text" id="first-name" placeholder="Имя" required>
+                <input type="text" id="last-name" placeholder="Фамилия" required>
+            </div>
+            <div class="input-group">
+                <input type="number" id="birth-year" placeholder="Год рождения" required>
+                <select id="performance" required>
+                    <option value="" disabled selected>Успеваемость</option>
+                    <option value="Нормис">Нормис</option>
+                    <option value="Черт">Черт</option>
+                    <option value="Нипавезло">Нипавезло</option>
+                    <option value="Лох по жизни">Лох по жизни</option>
+                </select>
+            </div>
+            <button type="submit" class="add">Добавить</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
